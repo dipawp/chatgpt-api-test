@@ -55,7 +55,7 @@ public class OAIService {
 		String toJsonString = gson.toJson(completionRequest);
         RequestBody body = RequestBody.create(JSON_MEDIA_TYPE, toJsonString);
         Request request = new Request.Builder()
-        		.header("Authorization", "Bearer OPENAI_API_KEY")
+        		.header("Authorization", "Bearer OPEN API KEY")
                 .url("https://api.openai.com/v1/chat/completions")
                 .post(body)
                 .build();
